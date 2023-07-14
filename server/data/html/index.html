@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmation, Alert, and Prompt Example</title>
+  <script type="text/javascript">
+    function displayAlert() {
+      window.alert("アラートです。");
+    }
+
+    function displayConfirmation() {
+      var result = window.confirm("確認アラートです。");
+      if (result) {
+        window.alert("OKを選択しました");
+      } else {
+        window.alert("キャンセルを選択しました");
+      }
+    }
+    
+    function displayPrompt() {
+      var name = window.prompt("プロンプトダイアログです。");
+      if (name != null && name !== "") {
+        window.alert("入力した文字列>" + name);
+      } else {
+        window.alert("何かしら文字列を書いてください");
+      }
+    }
+  </script>
+</head>
+<body>
+    <button onclick="displayAlert()">アラートダイアログを表示</button>
+    <button onclick="displayConfirmation()">確認ダイアログを表示</button>
+    <button onclick="displayPrompt()">プロンプトダイアログを表示</button>
+</body>
+</html>
