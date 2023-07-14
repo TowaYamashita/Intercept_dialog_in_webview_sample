@@ -1,16 +1,36 @@
 # intercept_dialog_in_webview_sample
 
-A new Flutter project.
+# required
+- Flutter 3.10.4
+- Dart 3.0.3 (stable)
+- Android Studio Dolphin 2021.3.1 Patch 1
+- ngrok 3.3.1
 
-## Getting Started
+# usage
 
-This project is a starting point for a Flutter application.
+1. webサーバを立ち上げる
+```
+cd server
+docker compose up -d
+```
 
-A few resources to get you started if this is your first Flutter project:
+2. ngrok で1で立ち上げたサーバをインターネットからアクセスできるようにする
+```
+ngrok http 80
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. .envファイルを作成し、INITIAL_URLに、2で立ち上げた際に発行されるHTTPSプロトコルでアクセスできるURLを書く
+```
+cp .env.example .env
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. 環境変数に関するファイルを生成する
+```
+flutter pub get
+flutter pub run build_runner build --delete-conflicting-outputs
+```
+
+5. アプリを立ち上げる
+```
+flutter run --debug
+```
