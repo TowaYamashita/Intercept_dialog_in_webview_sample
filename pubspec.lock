@@ -9,6 +9,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "61.0.0"
+  adaptive_dialog:
+    dependency: "direct main"
+    description:
+      name: adaptive_dialog
+      sha256: "2dc70b30899398ed0d2949e1ea9b1ee467fe700b4181ec33457737eaaf06b488"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.9.0-x-macos-beta.1"
   analyzer:
     dependency: transitive
     description:
@@ -17,6 +25,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.13.0"
+  animations:
+    dependency: transitive
+    description:
+      name: animations
+      sha256: fe8a6bdca435f718bb1dc8a11661b2c22504c6da40ef934cee8327ed77934164
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.7"
   args:
     dependency: transitive
     description:
@@ -177,6 +193,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.2"
+  dynamic_color:
+    dependency: transitive
+    description:
+      name: dynamic_color
+      sha256: de4798a7069121aee12d5895315680258415de9b00e717723a1bd73d58f0126d
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.6.6"
   envied:
     dependency: "direct main"
     description:
@@ -222,6 +246,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_inappwebview:
+    dependency: "direct main"
+    description:
+      name: flutter_inappwebview
+      sha256: f73505c792cf083d5566e1a94002311be497d984b5607f25be36d685cf6361cf
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.7.2+3"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -275,6 +307,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
+  intersperse:
+    dependency: transitive
+    description:
+      name: intersperse
+      sha256: "2f8a905c96f6cbba978644a3d5b31b8d86ddc44917662df7d27a61f3df66a576"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   io:
     dependency: transitive
     description:
@@ -315,6 +355,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  macos_ui:
+    dependency: transitive
+    description:
+      name: macos_ui
+      sha256: "34ad1327e7ca10886b695c4451a872e7a103ff58ed23394997380d82b0335354"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0-beta.7"
+  macos_window_utils:
+    dependency: transitive
+    description:
+      name: macos_window_utils
+      sha256: b78a210aa70ca7ccad6e7b7b810fb4689c507f4a46e299214900b2a1eb70ea23
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.3"
   matcher:
     dependency: transitive
     description:
@@ -522,3 +578,4 @@ packages:
     version: "3.1.2"
 sdks:
   dart: ">=3.0.3 <4.0.0"
+  flutter: ">=3.10.0"
